@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu | Zaika Admin</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Zaika Express Admin</div>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Menu Management</h2>
+      <p>Click below to add a new dish.</p>
+      <a class="btn" href="#">+ Add New Dish</a>
+    </div>
+
+    <div class="card">
+      <h2>Sample Menu Items</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>Paneer Tikka</td><td>Starters</td><td>₹150</td><td><a class="btn small" href="#">Edit</a> <a class="btn small ghost" href="#">Delete</a></td></tr>
+          <tr><td>Hyderabadi Biryani</td><td>Biryani</td><td>₹400</td><td><a class="btn small" href="#">Edit</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Zaika Express | Admin Panel</footer>
+</body>
+</html>

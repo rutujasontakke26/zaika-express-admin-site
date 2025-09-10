@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orders | Zaika Admin</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Zaika Express Admin</div>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="orders.html" class="active">Orders</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>All Orders</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Customer</th><th>Amount</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>#101</td><td>Rutuja S.</td><td>₹400</td><td>Delivered</td><td><a class="btn small" href="#">View</a></td></tr>
+          <tr><td>#102</td><td>Farhat M.</td><td>₹250</td><td>Pending</td><td><a class="btn small" href="#">Confirm</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Zaika Express | Admin Panel</footer>
+</body>
+</html>

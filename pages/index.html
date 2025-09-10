@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zaika Express | Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zaika Express Admin - Dashboard</title>
+  <link rel="stylesheet" href="admin-style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <div class="navbar">
-    <h1>Zaika Express Admin</h1>
-    <div>Welcome, Admin</div>
-  </div>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <a href="index.html" class="active">Dashboard</a>
-    <a href="menu.html">Manage Menu</a>
-    <a href="orders.html">Orders</a>
-    <a href="customers.html">Customers</a>
-    <a href="offers.html">Offers</a>
-    <a href="reports.html">Reports</a>
-    <a href="settings.html">Settings</a>
-  </div>
+  <nav>
+    <div class="logo">Zaika Express Admin</div>
+    <ul>
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="orders.html">Orders</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </nav>
 
-  <!-- Main Content -->
-  <div class="content">
-    <h2>Dashboard</h2>
-
+  <div class="container">
     <div class="card">
-      <h3>Quick Stats</h3>
-      <p>Orders Today: <strong>125</strong></p>
-      <p>Total Revenue: <strong>₹45,000</strong></p>
-      <p>Popular Dish: <strong>Paneer Tikka</strong></p>
+      <h2>Welcome, Owner</h2>
+      <p>Quick overview — everything is live and editable from the admin panel.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card stat">
+        <div class="num">125</div>
+        <div class="label">Orders Today</div>
+      </div>
+      <div class="card stat">
+        <div class="num">₹48,500</div>
+        <div class="label">Revenue (Today)</div>
+      </div>
+      <div class="card stat">
+        <div class="num">Paneer Tikka</div>
+        <div class="label">Top Dish</div>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Recent Orders</h3>
-      <ul>
-        <li>#1012 - Chicken Biryani - Pending</li>
-        <li>#1013 - Paneer Butter Masala - Delivered</li>
-        <li>#1014 - Gulab Jamun - Confirmed</li>
-      </ul>
+      <h2>Recent Orders</h2>
+      <table>
+        <thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>#1012</td><td>Rutuja S.</td><td>Chicken Biryani</td><td>Pending</td></tr>
+          <tr><td>#1011</td><td>Farhat M.</td><td>Paneer Tikka</td><td>Delivered</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
+  <footer>&copy; 2025 Zaika Express | Admin Panel</footer>
 </body>
 </html>

@@ -1,0 +1,81 @@
+/* admin-style.css - Zaika Express admin (clean, robust) */
+
+:root{
+  --rosewater:#f8c0c8;
+  --ivory:#efe7d3;
+  --lilac:#6a3183;
+  --pewter:#ece3f0;
+  --dark:#2e2e2e;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--ivory);
+  color:var(--dark);
+  line-height:1.5;
+}
+
+/* Navbar */
+nav{
+  background:var(--rosewater);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1rem 1.5rem;
+  box-shadow:0 3px 8px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav .logo{font-family:Georgia, serif;font-weight:700;color:var(--dark);font-size:1.25rem}
+nav ul{list-style:none;display:flex;gap:.75rem;margin:0;padding:0;align-items:center}
+nav a{color:var(--dark);text-decoration:none;padding:.35rem .6rem;border-radius:6px;font-weight:600}
+nav a:hover, nav a.active{background:var(--lilac);color:#fff}
+
+/* Container */
+.container{max-width:1200px;margin:1.5rem auto;padding:0 1rem}
+
+/* Cards */
+.card{
+  background:#fff;border-radius:12px;padding:1.25rem;margin-bottom:1.25rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+.card h2{margin:0 0 .75rem;color:var(--lilac);font-family:Georgia, serif}
+
+/* Grid helper */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+}
+@media (max-width:900px){ .grid-3{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:600px){ .grid-3{grid-template-columns:1fr} }
+
+/* Stat tile */
+.stat{
+  background:linear-gradient(180deg,var(--pewter),#fff);
+  border-radius:10px;padding:1rem;text-align:center;
+}
+.stat .num{font-size:1.6rem;font-weight:700;color:var(--dark)}
+.stat .label{font-size:.9rem;color:#444}
+
+/* Table */
+table{width:100%;border-collapse:collapse;margin-top:.75rem;font-size:.95rem}
+th,td{padding:.6rem;border:1px solid var(--pewter);text-align:left}
+th{background:var(--rosewater);color:var(--dark);font-weight:700}
+
+/* Buttons */
+.btn{display:inline-block;padding:.5rem .9rem;border-radius:8px;background:var(--lilac);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid var(--lilac);color:var(--lilac)}
+.btn.small{padding:.3rem .6rem;font-size:.9rem}
+
+/* Footer */
+footer{background:var(--pewter);padding:1rem;text-align:center;border-top:3px solid var(--rosewater);margin-top:1.5rem;font-size:.9rem}
+
+/* Debug badge — visible only if CSS loaded (temporary) */
+#css-loaded-badge{position:fixed;right:12px;top:12px;background:var(--lilac);color:#fff;padding:6px 10px;border-radius:8px;font-weight:700;z-index:9999}
